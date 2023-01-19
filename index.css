@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background: whitesmoke;
+}
+
+.container {
+  padding: 1rem;
+  min-height: 100vh;
+  width: 375px;
+  margin: 0 auto;
+}
+
+/* header */
+header {
+  background-color: #fff;
+  padding: 0 1rem;
+  height: 3.75rem;
+  border-bottom: 1px solid #e6e6e6;
+  /* centering */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo {
+  width: 100px;
+  object-fit: cover;
+}
+#profile {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 1px solid hsla(0, 0%, 90%, 0.5);
+}
+
+/* posts | section */
+.posts-section {
+  margin: 1rem 0;
+  border-radius: 3px;
+}
+
+/* post | article */
+#post {
+  background-color: #fff;
+  /* border: 1px solid #e6e6e6; */
+  margin-bottom: 0.5rem;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+#post:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  scale: 1.01;
+}
+
+.post-header {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+.post-header img {
+  width: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.post-image {
+  height: 375px;
+  width: 100%;
+  object-fit: cover;
+}
+.post-info {
+  margin-left: 0.5rem;
+  font-size: 13px;
+}
+.post-info .user {
+  font-weight: 600;
+}
+.post-info .location {
+  margin-top: 0.1rem;
+  font-size: 12px;
+}
+
+.post-actions {
+  padding: 1rem;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+}
+.post-actions img {
+  width: 20px;
+  object-fit: cover;
+}
+
+.post-stats {
+  padding: 1rem;
+  font-size: 13px;
+}
+.likes {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.user {
+  font-weight: 600;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
